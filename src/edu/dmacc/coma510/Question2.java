@@ -1,5 +1,6 @@
 package edu.dmacc.coma510;
 
+import java.text.DecimalFormat;
 import java.util.Scanner;
 
 public class Question2 {
@@ -11,7 +12,9 @@ public class Question2 {
         double userNum2 = in.nextDouble();
         double userNum3 = in.nextDouble();
         double result = Question2.min(userNum1, userNum2, userNum3);
-        System.out.println(String.format("The smallest of your three doubles is %f", result));
+        DecimalFormat df = new DecimalFormat("0.0");
+        String resultFormatted = df.format(result);
+        System.out.println("The average of your three integers is " + resultFormatted);
     }
 
     public static double min(double num1, double num2, double num3) {

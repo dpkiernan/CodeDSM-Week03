@@ -1,5 +1,6 @@
 package edu.dmacc.coma510;
 
+import java.text.DecimalFormat;
 import java.util.Scanner;
 
 public class Question1 {
@@ -11,7 +12,9 @@ public class Question1 {
         int userNum2 = in.nextInt();
         int userNum3 = in.nextInt();
         double result = Question1.avg(userNum1, userNum2, userNum3);
-        System.out.println(String.format("The average of your three integers is %f", result));
+        DecimalFormat df = new DecimalFormat("0.0######");
+        String resultFormatted = df.format(result);
+        System.out.println("The average of your three integers is " + resultFormatted);
     }
 
     public static double avg(double num1, double num2, double num3) {
