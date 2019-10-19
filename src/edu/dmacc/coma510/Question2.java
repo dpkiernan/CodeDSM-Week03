@@ -14,7 +14,7 @@ public class Question2 {
         double result = Question2.min(userNum1, userNum2, userNum3);
         DecimalFormat df = new DecimalFormat("0.0");
         String resultFormatted = df.format(result);
-        System.out.println("The average of your three integers is " + resultFormatted);
+        System.out.println("The smallest of your three doubles is " + resultFormatted);
     }
 
     public static double min(double num1, double num2, double num3) {
