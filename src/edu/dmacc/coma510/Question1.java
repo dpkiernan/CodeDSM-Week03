@@ -17,8 +17,9 @@ public class Question1 {
         System.out.println("The average of your three integers is " + resultFormatted);
     }
 
-    public static double avg(double num1, double num2, double num3) {
-        return ((num1 + num2 + num3) / 3);
+    public static double avg(int num1, int num2, int num3) {
+        double result = ((num1 + num2 + num3) / (double)3);
+        return (result);
     }
 
 }
